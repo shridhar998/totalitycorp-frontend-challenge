@@ -15,7 +15,7 @@ type CartItem = {
   quantity: number;
 };
 type CartProviderProps = {
-  children: ReactNode;
+  children: React.ReactNode;
 };
 type CartAction =
   | { type: 'ADD_TO_CART'; product: Product }
