@@ -3,6 +3,7 @@
 import React from 'react';
 import { useCart } from '../../../context/CartContext';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Cart: React.FC = () => {
   const { cartItems, dispatch } = useCart();
@@ -35,7 +36,7 @@ const Cart: React.FC = () => {
       
       {cartItems.map(item => (
         <div key={item.product.id} className="flex mb-2 gap-8 mt-3 border-2">
-        <img src={item.product.image} alt={item.product.title} className="w-30 h-36 object-cover mr-2" />
+        <Image src={item.product.image} alt={item.product.title} className="w-30 h-36 object-cover mr-2" />
         <div className="">
           <p className='mt-4'>{item.product.title}</p>
           <p className="text-gray-600 mt-4">Price : ${item.product.price}</p>
