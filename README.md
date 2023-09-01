@@ -14,7 +14,7 @@ This is an E-commerce web application built with Next.js and Tailwind CSS, allow
 
 - **Context API**: A state management solution provided by React, used to manage the shopping cart state.
 
-- **API Integration**: Fetching product data from an external API to display in the application.
+- **API Integration**: Fetching product data from an external API (fakestoreapi : https://fakestoreapi.com/products) to display in the application.
 
 ## Features
 
