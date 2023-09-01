@@ -77,7 +77,7 @@ const ProductListing = () => {
   
   return (
     <div className="container mx-16 py-8">
-      <h1 className="text-lg text-center font-semibold mb-8">Shridhar's E-commerce Store</h1>
+      <h1 className="text-lg text-center font-semibold mb-8">Shridhar&apos;s E-commerce Store</h1>
       <div className='flex justify-end'>
         <Link href="/components/cart" >
           <button
