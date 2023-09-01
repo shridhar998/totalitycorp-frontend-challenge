@@ -14,7 +14,9 @@ type CartItem = {
   product: Product;
   quantity: number;
 };
-
+type CartProviderProps = {
+  children: ReactNode;
+};
 type CartAction =
   | { type: 'ADD_TO_CART'; product: Product }
   | { type: 'REMOVE_FROM_CART'; productId: number }
@@ -62,7 +64,7 @@ const CartContext = createContext<{
 } | undefined>(undefined);
 
 // Provider component
-export const CartProvider: React.FC = ({ children }) => {
+export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
   const [cartItems, dispatch] = useReducer(cartReducer, initialState);
 
   return <CartContext.Provider value={{ cartItems, dispatch }}>{children}</CartContext.Provider>;
