@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import { useCart } from '../../context/CartContext';
 import Link from 'next/link';
+import Image from 'next/image';
 import Toast from './toast';
 import CategoryFilter from './CategoryFilter';
 import PriceRangeFilter from './PriceRangeFliter';
@@ -38,7 +39,7 @@ const ProductListing = () => {
   })
   .map((product) => (
     <div key={product.id} className="bg-white p-4 shadow-md">
-      <img src={product.image} alt={product.title} className="w-32 h-48 object-cover" />
+      <Image src={product.image} alt={product.title} className="w-32 h-48 object-cover" />
             <h2 className="text-lg font-semibold">{product.title}</h2>
             <p className="text-gray-600">${product.price}</p>
       <button
