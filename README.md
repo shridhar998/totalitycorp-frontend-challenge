@@ -1,34 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# E-commerce Website
 
-## Getting Started
+This is an E-commerce web application built with Next.js and Tailwind CSS, allowing users to browse, filter, and purchase products.
 
-First, run the development server:
+## Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- **Next.js**: A React framework for building server-rendered React applications with SEO optimization and improved performance out of the box.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Tailwind CSS**: A utility-first CSS framework for quickly building responsive and customizable user interfaces.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **React**: A JavaScript library for building user interfaces. Used within Next.js to create the front-end components.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **TypeScript**: A statically-typed superset of JavaScript, providing better development tooling and code quality.
 
-## Learn More
+- **Context API**: A state management solution provided by React, used to manage the shopping cart state.
 
-To learn more about Next.js, take a look at the following resources:
+- **API Integration**: Fetching product data from an external API to display in the application.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Product Listing: Display a variety of products with images, names, prices, and "Add to Cart" buttons.
 
-## Deploy on Vercel
+- Shopping Cart: Implement a cart section to display the added products, quantities, and total cost. Allow users to increase, decrease, or remove items from the cart.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Checkout: Implement a checkout process that calculates the total cost of items in the cart. Allow users to enter shipping information and payment details.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Responsive Design: Ensure the website is responsive and works seamlessly on both desktop and mobile devices. Optimize the layout for different screen sizes.
+
+- Product Filters: Allow users to sort products by category, price range, or ratings.
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/shridhar998/totalitycorp-frontend-challenge.git
+   cd your-repo
+2. Install dependencies:
+   ```bash
+    npm install
+3. Start the development Server:
+   ```bash
+   npm run dev
